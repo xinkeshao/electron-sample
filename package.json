@@ -4,13 +4,15 @@
   "description": "A sample electron application.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . ElectronSample --platform=win32 --arch=x64 --icon=computer.ico --out=./out --app-version=0.0.1 --overwrite --ignore=node_modules"
   },
   "keywords": [],
-  "author": "",
+  "author": "XinkeShao",
   "license": "ISC",
   "devDependencies": {
     "electron": "^30.0.9",
+    "electron-packager": "^17.1.2",
     "prettier": "^3.2.5"
   }
 }
